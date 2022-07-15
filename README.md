@@ -1,1 +1,3 @@
-# Machine-Coding-Round-Questions
+# Mid Level Javascript projects
+
+  1. Practising Javascript & CSS by building projects.
