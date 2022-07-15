@@ -1,3 +1,6 @@
 # Mid Level Javascript projects
 
-  1. Practising Javascript & CSS by building projects.
+## Practising Javascript & CSS by building projects.
+
+  1. Tic Tac Toe
+  2. Calculator
