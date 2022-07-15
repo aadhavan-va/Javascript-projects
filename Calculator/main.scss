@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@700&family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500;700&family=Sacramento&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+.div-container {
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    display: grid;
+    max-width: 500px;
+    min-height: 700px;
+    grid-template-rows: 25% 75%;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.section-one {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    justify-self: end;
+    align-self: end;
+    color: white;
+}
+
+.section-two {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "one one one one"
+                        "two two two two"
+                        "three three three"
+                        "four four four four"
+                        "five five six six";
+}
+
+.button {
+    position: relative;
+    text-align: center;
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    border: 1px solid rgb(0, 0, 0);
+
+    &.divide,
+    &.multiply,
+    &.subtract,
+    &.add,
+    &.equal {
+        color: white;
+        background-color: orange;
+    }
+
+    &.ac,
+    &.del,
+    &.percentage {
+        background-color: gray;
+    }
+
+    &.seven,
+    &.eight,
+    &.nine,
+    &.four,
+    &.five,
+    &.six,
+    &.one,
+    &.two,
+    &.three,
+    &.zero,
+    &.dot {
+        background-color: rgb(55, 53, 53);
+        color: white;
+    }
+}
+
+.button {
+    &.zero {
+        grid-column: 1/3;
+        margin: auto;
+        width: 200px;
+        height: 60px;
+        border-radius: 35px;
+    }
+}
