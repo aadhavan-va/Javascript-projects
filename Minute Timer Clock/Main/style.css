@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #585858;
+  --dark-black: #2B2A30;
+}
+
+html,
+body {
+  position: relative;
+  background-color: var(--black);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  height: 518px;
+  width: 518px;
+  border-radius: 50%;
+  background-color: var(--dark-black);
+  display: grid;
+  grid-template-rows: 70% 15% 15%;
+  grid-template-columns: 80%;
+  place-content: center;
+  justify-items: center;
+  border: 5px solid;
+  border-left-color: red;
+  border-right-color: red;
+  border-top-color: red;
+}
+
+.clock {
+  font-size: 96px;
+  line-height: 196px;
+  display: flex;
+  color: white;
+  align-self: center;
+  width: 200px;
+  height: 196px;
+}
+
+.start {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 15px;
+}
+.start:hover {
+    cursor: pointer;
+}
+
+.gear {
+    animation: spin 2s linear forwards;
+}
+.gear:hover {
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
