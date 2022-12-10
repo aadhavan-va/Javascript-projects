@@ -1,4 +1,5 @@
-## Practising Javascript & CSS by building projects.
+#### Javscript Projects.
 
   1. Tic Tac Toe
   2. Calculator
+  3. Timer Clock
